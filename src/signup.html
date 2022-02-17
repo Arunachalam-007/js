@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+</head>
+<body>
+    <header>
+        <h1>Input Types</h1>
+    </header>
+    <div>
+        <form>
+            <div>
+                <label>Name:</label>
+                <input title="login-username" type="text" name="username" required minlength="5" maxlength="10" ><br><br>
+            </div>
+            <div>
+                <label>Password</label>
+                <input id="password" pattern="[A-7a-z*]*[0-9][A-7a-z]*" minlength="8" type="password" title="password must egin with letter and contain at least one digit and have at least 8 char"><br><br>
+            </div>
+            <div>
+                <label>Email id</label>
+                <input title="enter email" id="email" type="email"><br><br>
+            </div>
+            <div>
+                <label>Photo</label>
+                <input placeholder="file" id="file" type="file" accept="audio/*,video/*,image/*"><br><br>
+                
+            </div>
+            <div>
+                <input title="enter your date of birth" id="date" type="date"><br><br>
+                <input title="enter date and time" id="datetime-local" type="datetime-local"><br><br>
+                <input title="enter time here" id="time" type="time"><br><br>
+                <input title="enter the week of the year" id="week" type="week"><br><br>
+                <input title="status" id="color" type="color"><br>
+
+            </div>
+            <div>
+                <label>Years of Experience</label>
+                <input title="status" id="year" type="number" min=1 max=40 step=1 maxlength="3"><br><br>
+            
+            </div>
+            <div>
+                <label>Range</label>
+                <input title="range" id="range" type="range" step="10"><br><br>
+
+            </div>
+            <div>
+                <label>Skils</label>
+                <input id="search" type="search"placeholder="Search you skill"><br><br>
+
+            </div>
+            <div>
+                <label>Telephone</label>
+                <input type="tel" name="telid" required pattern="[0-9][3]-[0-9][3]-[0-9][3]" placeholder="123-456-768"><br><br>
+
+            </div>
+            <div>
+                <label>Hobbies</label>
+                <input title="hobby" type="checkbox" checked=true name="items" value="Reading">Reading</input>
+                <input title="option1" type="checkbox" name="items" value="Music">Music</input>
+                <input title="option2 " type="checkbox" name="items" value="Dance">Dance</input><br><br>
+
+            </div>
+            <div>
+                <label>Hidden Content</label>
+                <input id="hid" type="hidden" value="sample"><br><br>
+            </div>
+            <div>
+                <label>URL</label>
+                <input title="enter url" id="url" type="url"><br><br>
+
+            </div>
+            <div>
+                <label>
+                    Comments
+                </label>
+                <textarea title="Enter your comment here" id="comment" cols="50" rows="5">Comments</textarea><br><br>
+            </div>
+            <div>
+                <label>Select Course</label>
+                <select name="course list" title="Select a course">
+                    <option selected>---Select a Value---</option>
+                    <option>HTML</option>
+                    <option>Java</option>
+                    <option>Bootstrap</option>
+                    <optgroup label="database">
+                        <option>SQL</option>
+                        <option>Oracle</option>
+                        <option>MySQL</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div>
+                <input type="submit">
+                <input type="reset" value="reset">
+                <input type="image" alt="close" name="close" width="25" height="25">
+            </div>
+
+        </form>
+    </div>
+    
+</body>
+</html>
