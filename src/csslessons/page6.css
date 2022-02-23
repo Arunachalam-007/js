@@ -1,0 +1,16 @@
+section p{
+    color: red;
+}
+section > p{
+    color: brown;
+}
+ h1 + p{
+     color:yellow;
+    background-color: blue;
+}
+h1 ~ p{
+    background-color:cadetblue;
+}
+h1 > p{
+    background-color:crimson;
+} 
