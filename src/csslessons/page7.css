@@ -1,4 +1,4 @@
-/* a:link {
+a:link {
     font-size: 35px;
     text-decoration: none;
     color: goldenrod;
@@ -10,11 +10,12 @@ a:hover{
     color: blue;
 }
 a:active{
+    color: red;
 
 }
 .dropdown-content a{
     display: none;
-} */
+} 
 h1::first-letter{
     font-size: 70px;
     font-style: bold;

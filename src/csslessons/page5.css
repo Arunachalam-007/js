@@ -9,9 +9,9 @@ h3{
 h1,h3{
     color: white;
 }
-/* ul li{
+ ul li{
     color: red;
-} */
+} 
 
 ul>li{
     color: blue;
