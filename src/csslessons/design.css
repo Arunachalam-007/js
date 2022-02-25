@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    background-color: yellowgreen;
+    opacity: 0.8;
+}
+h1{
+    color:white;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    background-color: brown;
+}
+.sect-1{
+    padding-left: 500px;
+    background-repeat: no-repeat;
+    width: 100%;
+    size: 5px;
+    
+}
