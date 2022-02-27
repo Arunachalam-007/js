@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --lexend-deca-400:'Lexend Deca',sans-serif;
+    --big-shoulders-700: "Big Shoulders Display",cursive;
+}
+body{
+    width: 90%;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 95%);
+}
+main{
+    margin-top: 3em;
+}
+h2{
+    font-family: var(--big-shoulders-700);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    padding: 0.8em 0em;
+    font-size: 1.8em;
+ 
+}
+p{
+    font-family: var(--lexend-deca-400);
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 1em;
+    line-height: 1.8em;
+    padding-right: 1.2em;
+}
+button{
+    font-family:var(--lexend-deca-400);
+    border: none;
+    background-color:hsl(0, 0%, 95%);
+    margin: 1.5em 0em;
+    padding: 1em 2em;
+    border-radius: 50px;
+    font-size: 1em;
+}
+
+.content{
+    padding: 2em;
+}
+.sedan button{
+    color: hsl(31, 77%, 52%);
+}
+.suv button{
+    color: hsl(184, 100%, 22%);
+}
+.luxury button{
+    color: hsl(179, 100%, 13%);
+}
+.sedan{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 10px 0 0;
+}
+.suv{
+    background-color: hsl(184, 100%, 22%);  
+}
+.luxury{
+    background-color: hsl(179, 100%, 13%);  
+    border-radius: 0 0 10px 10px; 
+}
+
+@media screen and (min-width:992px){
+    main{
+        display: flex;
+        flex-direction: row;
+    }
+    .sedan {
+        border-radius: 10px 0 0 10px;
+    }
+    .luxury{
+        border-radius: 0 10px 10px 0;
+    }
+    button{
+        margin: 5em 0em 1em 0em;
+    }
+    button:hover{
+        border: 1px solid white;
+        background: none;
+        color: hsl(0, 0%, 95%);
+        cursor: pointer;
+    }
+    h2{
+        font-size: 2em;
+
+    }
+    .content{
+        max-width: 310px;
+    }
+    .attribution {
+        font-size: 11px; 
+        text-align: center; 
+    }
+    .attribution a {
+        color: hsl(228, 45%, 44%); 
+    }
+    
+}
+
+
+
