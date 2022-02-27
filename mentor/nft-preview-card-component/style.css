@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+*{
+    font-family: 'Outfit',sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    min-width: 375px;
+    max-width: 1440px;
+}
+body{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+    max-width: 360px;
+}
+.card{
+    background-color: hsl(216, 50%, 16%);
+    padding: 1.5em;
+    margin-top: 3em;
+    border-radius: 20px;
+    box-shadow: 0em 1em 2em rgba(0,0,0,0.638);
+}
+.product-img{
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+}
+.hover{
+    position: absolute;
+    z-index: 1;
+    background-color: hsla(178,100%,50%,0.371);
+    height: 48vh;
+    width: 48vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+
+}
+.hover:hover{
+    opacity: 1;
+    cursor: pointer;
+
+}
+h1{
+    font-weight: 600;
+    font-size: 1.5em;
+    padding: 0.5em 0em;
+}
+h1 a{
+    text-decoration: none;
+    color: white;
+}
+h1 a:hover{
+    color: hsl(178, 100%, 50%);
+}
+p{
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    font-size: 1.15em;
+    line-height: 1.5em;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0em;
+    align-items: center;
+}
+.price h2{
+    font-weight: 400;
+    font-size: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.price h2:nth-of-type(1){
+    color: hsl(178, 100%, 50%);
+}
+.price h2:nth-of-type(2){
+    color: hsl(215, 51%, 70%);
+}
+.price img{
+    padding-right: 0.3em;
+}
+.divider p{
+    background-color: hsl(215, 32%, 27%);
+    height: 1px;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+}
+.profile h3{
+    font-weight: 300;
+    font-size: 1em;
+    color: hsl(215, 51%, 70%);
+}
+.profile a:hover{
+    color: hsl(178, 100%, 50%);
+
+}
+.profile img{
+    width: 30px;
+    border-radius: 50px;
+    border: 1px solid white;
+    margin-right: 0.5em;
+}
+.profile a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.attribution {
+    font-size: 11px; 
+    text-align: center; 
+    color: white;
+    margin-top: 3em;
+}
+.attribution a {
+    color: hsl(178, 100%, 50%); 
+}
