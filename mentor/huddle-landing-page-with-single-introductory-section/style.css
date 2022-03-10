@@ -1,37 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 body {
-  min-height: 100vh;
   background-image: url(./images/bg-desktop.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: hsl(257, 40%, 49%);
+  min-height: 100vh;
 }
 .container {
+  height: 100vh;
   max-width: 1320px;
   margin: 0 auto;
-  height: 100vh;
 }
 .wrapper {
-  height: 90%;
   display: flex;
   flex-direction: column;
+  height: 90%;
   justify-content: space-between;
   padding: 40px 0;
   margin: 0 2rem;
 }
 .header img {
-  width: 190px;
   padding-bottom: 20px;
+  width: 190px;
 }
 .main {
-  display: flex;
   align-items: center;
+  display: flex;
   gap: 40px;
 }
 .hero-text h1 {
@@ -40,19 +40,19 @@ body {
   margin-bottom: 20px;
 }
 .hero-text p {
-  font-family: "Open Sans", sans-serif;
   color: #fff;
+  font-family: "Open Sans", sans-serif;
   line-height: 1.8;
   margin-bottom: 30px;
 }
 .hero-text a {
-  display: inline-block;
-  font-family: "Poppins", sans-serif;
-  text-decoration: none;
   background-color: #fff;
-  padding: 13px 50px;
   border-radius: 25px;
   box-shadow: 0 8px 17px -8px rgba(0, 0, 0, 0.8);
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  padding: 13px 50px;
+  text-decoration: none;
   transition: all 0.3s ease;
 }
 .hero-text a:hover {
@@ -72,15 +72,15 @@ body {
   margin-left: 2rem;
 }
 .social a i::after {
-  content: "";
-  position: absolute;
-  height: 40px;
-  width: 40px;
+  bottom: -13px;
   border: 2px solid #fff;
   border-radius: 50%;
+  content: "";
+  height: 40px;
   left: -15px;
-  bottom: -13px;
+  position: absolute;
   transition: all 0.3s ease;
+  width: 40px;
 }
 .social a:nth-child(2) {
   margin-left: 2.4rem;
@@ -105,8 +105,8 @@ body {
     font-size: 26px;
   }
   .social {
-    text-align: center;
     margin-top: 50px;
+    text-align: center;
   }
   .hero-text a {
     padding: 10px 70px;

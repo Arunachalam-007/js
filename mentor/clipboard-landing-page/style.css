@@ -1,38 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
 * {
+  box-sizing: border-box;
   font-family: "Bai Jamjuree", sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 html {
-  min-width: 375px;
-  max-width: 1440px;
-  margin: auto;
   background-image: url(./images/bg-header-mobile.png);
   background-repeat: no-repeat;
   background-position: top center;
+  min-width: 375px;
+  max-width: 1440px;
+  margin: auto;
 }
 main {
-  width: 90%;
-  margin: auto;
-  text-align: center;
-  min-height: 100vh;
+  align-items: center;
+  gap: 6em;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap: 6em;
+  margin: auto;
+  min-height: 100vh;
+  text-align: center;
+  width: 90%;
 }
 section {
-  width: 90%;
   margin: auto;
+  width: 90%;
 }
 
 .devices,
 .computer {
-  width: 100%;
   margin-top: 2em;
+  width: 100%;
 }
 .sect-1 .logo {
   margin-top: 5em;
@@ -46,30 +46,30 @@ h3 {
 }
 p {
   color: hsl(201, 11%, 66%);
+  font-weight: 400;
   padding: 0.8em 0em;
   line-height: 1.4em;
-  font-weight: 400;
 }
 h1 {
   font-size: 1.8em;
   margin-top: 1.5em;
 }
 .btns {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 1.3em;
+  justify-content: center;
   margin-top: 2em;
 }
 button {
   border: none;
   background: none;
-  padding: 1em 0em;
-  color: white;
   border-radius: 50px;
-  width: 90%;
+  color: white;
   font-weight: 400;
+  padding: 1em 0em;
+  width: 90%;
 }
 .dl-ios {
   background-color: hsl(171, 66%, 44%);
@@ -85,22 +85,22 @@ button {
   margin: 1.5em 0em;
 }
 .sect-4 {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 3.5em;
+  justify-content: center;
 }
 footer {
+  align-items: center;
   background-color: hsl(0, 0%, 86%, 0.35);
-  text-align: center;
-  margin-top: 5em;
-  padding: 1em 0em;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 2em;
+  justify-content: center;
+  margin-top: 5em;
+  padding: 1em 0em;
+  text-align: center;
 }
 .footer-logo {
   width: 30%;
@@ -109,9 +109,9 @@ li {
   list-style: none;
 }
 a {
-  text-decoration: none;
   color: hsl(210, 10%, 33%);
   font-weight: 600;
+  text-decoration: none;
 }
 .links {
   display: flex;
@@ -119,12 +119,12 @@ a {
   line-height: 2.5em;
 }
 .social-icons {
+  align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  align-items: center;
-  width: 50%;
   margin: auto;
+  width: 50%;
 }
 @media screen and (min-width: 992px) {
   html {
@@ -132,8 +132,8 @@ a {
     overflow-x: hidden;
   }
   .head {
-    width: 55%;
     margin: auto;
+    width: 55%;
   }
   h1 {
     font-size: 2.5em;
@@ -150,8 +150,8 @@ a {
   }
   .btns {
     flex-direction: row;
-    width: 40%;
     margin: 2em auto 0;
+    width: 40%;
   }
   button {
     font-size: 1.1em;
@@ -168,8 +168,8 @@ a {
   .computer {
     grid-column: 1/2;
     grid-row: 2/3;
-    width: 110%;
     margin-left: -13em;
+    width: 110%;
   }
   .sect-2 .infos {
     text-align: start;
@@ -180,15 +180,15 @@ a {
   }
   .sect-3 .infos {
     display: grid;
+    gap: 1em;
     grid-template-columns: repeat(3, 1fr);
     margin-top: 3em;
-    gap: 1em;
   }
   .infos img {
     margin-bottom: 1em;
     height: 50px;
-    width: 50px;
     object-fit: contain;
+    width: 50px;
   }
   .sect-3 .info {
     align-self: start;
@@ -199,8 +199,8 @@ a {
   }
   footer {
     display: grid;
-    grid-template-columns: 20% 60% 20%;
     gap: 0.5em;
+    grid-template-columns: 20% 60% 20%;
     padding-top: 3em;
   }
   .footer-logo {
@@ -208,22 +208,22 @@ a {
     width: 20%;
   }
   .links {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 70%;
-    font-size: 1.2em;
     align-self: start;
-    text-align: start;
+    display: grid;
+    font-size: 1.2em;
     gap: 0em;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: start;
+    width: 70%;
   }
   .attribution {
-    width: 100%;
     grid-column: 1/4;
     justify-self: center;
+    width: 100%;
   }
   .social-icons {
-    width: 70%;
     margin: 0;
+    width: 70%;
   }
   .dl-ios:hover {
     background-color: hsla(171, 66%, 44%, 0.727);

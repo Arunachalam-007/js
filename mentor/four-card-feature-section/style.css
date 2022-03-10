@@ -1,63 +1,63 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
 
 * {
+  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 html {
-  min-width: 375px;
   max-width: 1440px;
   margin: auto;
+  min-width: 375px;
 }
 body {
-  width: 90%;
-  margin: auto;
-  min-height: 100vh;
+  align-items: center;
+  background-color: hsl(0, 0%, 98%);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  background-color: hsl(0, 0%, 98%);
+  margin: auto;
+  min-height: 100vh;
+  width: 90%;
 }
 header {
   text-align: center;
   margin-top: 5em;
 }
 header h1 {
+  color: hsl(229, 6%, 66%);
   font-size: 1.5em;
   font-weight: 200;
-  color: hsl(229, 6%, 66%);
 }
 header h2 {
+  color: hsl(234, 12%, 34%);
   font-size: 1.5em;
   font-weight: 600;
-  color: hsl(234, 12%, 34%);
 }
 header p {
+  color: hsl(229, 6%, 66%);
   font-size: 1em;
   font-weight: 200;
-  padding: 1em;
-  color: hsl(229, 6%, 66%);
   margin: auto;
+  padding: 1em;
 }
 .cards {
-  margin-top: 3em;
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  margin-top: 3em;
 }
 .card {
   background-color: white;
-  margin: 1.5em 1em;
-  padding: 1.5em;
   border-radius: 5px;
   border-top: 5px solid blue;
+  box-shadow: 0em 0.5em 1em rgba(0, 0, 0, 0.185);
+  margin: 1.5em 1em;
+  padding: 1.5em;
   height: 13.5em;
   width: 20em;
-  box-shadow: 0em 0.5em 1em rgba(0, 0, 0, 0.185);
 }
 .card h2 {
   color: hsl(234, 12%, 34%);
@@ -107,8 +107,8 @@ header p {
     margin-top: 0em;
   }
   .card {
-    height: 15em;
     align-self: center;
+    height: 15em;
   }
   .supervisor {
     grid-column: 1/2;
