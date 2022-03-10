@@ -62,6 +62,36 @@ section {
 .text span {
   font-weight: bolder;
 }
+.chat {
+  background-color: #fff;
+  border-radius: 10px 10px 0 10px;
+  color: hsl(229, 57%, 11%);
+  font-weight: 700;
+  font-size: 32px;
+  padding: 15px 30px;
+  position: absolute;
+  right: 210px;
+  top: 240px;
+  z-index: 1;
+}
+.chat:after {
+  border-top: solid 50px #fff;
+  border-left: solid 50px transparent;
+  border-right: solid 0px transparent;
+  border-bottom: solid 10px transparent;
+  content: "";
+  display: block;
+  height: 0;
+  left: 106px;
+  position: absolute;
+  top: 60%;
+  width: 0;
+  z-index: -1;
+}
+#left-gb {
+  color: hsl(229, 7%, 55%);
+  font-size: 12px;
+}
 .bar {
   background-color: hsl(229, 57%, 11%);
   border-radius: 20px;
