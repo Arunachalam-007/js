@@ -6,7 +6,7 @@
   padding: 0;
 }
 html {
-  background-image: url(./images/bg-header-mobile.png);
+  background-image: url(../images/bg-header-mobile.png);
   background-repeat: no-repeat;
   background-position: top center;
   min-width: 375px;
@@ -128,7 +128,7 @@ a {
 }
 @media screen and (min-width: 992px) {
   html {
-    background-image: url(./images/bg-header-desktop.png);
+    background-image: url(../images/bg-header-desktop.png);
     overflow-x: hidden;
   }
   .head {

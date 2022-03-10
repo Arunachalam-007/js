@@ -5,7 +5,7 @@
   padding: 0px;
 }
 body {
-  background: url(./images/bg-mobile.png);
+  background: url(../images/bg-mobile.png);
   font-family: "Raleway", sans-serif;
   font-size: 14px;
 }
@@ -136,7 +136,7 @@ section {
 
 @media screen and (min-width: 750px) {
   body {
-    background-image: url(./images/bg-desktop.png);
+    background-image: url(../images/bg-desktop.png);
     background-position-y: bottom;
     background-color: hsl(229, 57%, 11%);
     background-repeat: repeat-x;

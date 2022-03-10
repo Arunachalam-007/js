@@ -74,16 +74,16 @@ header p {
   padding: 1em 0em;
 }
 .supervisor p::after {
-  content: url(./images/icon-supervisor.svg);
+  content: url(../images/icon-supervisor.svg);
 }
 .team-builder p::after {
-  content: url(./images/icon-team-builder.svg);
+  content: url(../images/icon-team-builder.svg);
 }
 .karma p::after {
-  content: url(./images/icon-karma.svg);
+  content: url(../images/icon-karma.svg);
 }
 .calculator p::after {
-  content: url(./images/icon-calculator.svg);
+  content: url(../images/icon-calculator.svg);
 }
 .supervisor {
   border-color: hsl(180, 62%, 55%);
