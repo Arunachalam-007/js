@@ -32,23 +32,19 @@
     </div>
     <h1>Powerful insights into your team</h1>
     <p>Project planning and time tracking for agile teams</p>
+    <div class="btn-pre">
+      <button class="btn">Schedule a demo</button>
+      <h4 class="pre live">to see a live preview</h4>
+
+    </div>
+  </div>
+  <div class="img">
+    <img src="./images/illustration-devices.svg">
+
   </div>
 </main>
 
 <body>
-
-
-
-
-
-
-
-
-
-
-
-  Schedule a demo
-  to see a live preview
 
   <footer>
     <p class="attribution">
@@ -56,6 +52,25 @@
       Coded by <a href="#">Arunachalam</a>.
     </p>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".close").hide();
+      $(".lists").hide();
+      $(".ham").on("click", () => {
+        $(".ham").toggle();
+        $(".close").toggle();
+        $(".lists").toggle();
+      });
+
+      $(".close").on("click", () => {
+        $(".close").toggle();
+        $(".ham").toggle();
+        $(".lists").toggle();
+      });
+    });
+
+  </script>
 </body>
 
 </html>
