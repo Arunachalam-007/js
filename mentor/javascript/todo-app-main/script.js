@@ -1,3 +1,5 @@
+/* eslint-disable semi */
+/*eslint-disable*/
 let form = document.querySelector("form");
 let text = document.getElementById("text");
 let todocon = document.querySelector(".todo-con");
