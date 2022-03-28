@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  background-color: rgba(0, 255, 255, 0.151);
+  overflow-x: hidden;
+}
+.container {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  padding: 20px 30px 20px 30px;
+  margin-right: 60px;
+  gap: 20px;
+  width: 100%;
+}
+.img-link {
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  box-shadow: 5px 5px 5px hsl(240, 95%, 41%);
+}
+.img-link p {
+  font-size: 20px;
+}
+.img-link a {
+  text-decoration: none;
+}
+.container img {
+  width: 250px;
+  border-radius: 20px;
+}
