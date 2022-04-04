@@ -1,0 +1,98 @@
+<div class="container">
+  <h1>RT-PCR REGISTRATION</h1>
+  <form class="tab tab-container" [formGroup]="fg">
+    <div class="info">
+      <label for="fname">First Name :</label>
+      <input type="text" name="fname" id="fname" formControlName="fname" required>
+    </div>
+    <div class="info">
+      <label for="lname">Last Name :</label>
+      <input type="text" name="lname" id="lname" formControlName="lname" required>
+    </div>
+    <div class="info">
+      <label for="date-of-birth">Date Of Birth :</label>
+      <input type="date" name="dob" id="dob" formControlName="dob" required>
+    </div>
+    <div class="info" id="check-gen">
+      <label for="gender">Gender :</label>
+      <input type="text" name="gender" id="gender" formControlName="gender" required>
+    </div>
+    <div class="info">
+      <label for="city">City :</label>
+      <input type="text" name="city" id="city" formControlName="city" required>
+    </div>
+    <div class="info">
+      <label for="date-of-test">Date Of Test :</label>
+      <input type="date" name="date" id="date" formControlName="date" required>
+    </div>
+    <div class="info">
+      <label for="time-of-test">Time Of Test :</label>
+      <input type="time" id="time" formControlName="time" required>
+    </div>
+    <div class="info">
+      <label for="lab">Lab Name :</label>
+      <input type="text" name="lab" id="lab" formControlName="lab" required>
+    </div>
+    <div class="info">
+      <label for="report">Report Number :</label>
+      <input type="text" name="report" id="report" formControlName="report" required>
+    </div>
+    <div class="info">
+      <label for="result">Result :</label>
+      <input type="text" name="result" id="result" formControlName="result" required>
+    </div>
+    <div class="info">
+      <label for="aadhar">Aadhar Numbar :</label>
+      <input type="number" name="aadhar" id="aadhar" formControlName="aadhar" required>
+    </div>
+    <div class="buttons">
+      <button (click)="add()" [disabled]="!fg.valid">Register</button>
+    </div>
+  </form>
+
+  <div class="tab">
+    <table id="table">
+      <tr>
+        <th *ngFor="let column of headers">
+          {{column}}
+        </th>
+      </tr>
+      <tr *ngFor="let value of store">
+        <td>
+          {{ value.fname }}
+        </td>
+        <td>
+          {{ value.lname }}
+        </td>
+        <td>
+          {{ value.dob }}
+        </td>
+        <td>
+          {{ value.gender }}
+        </td>
+        <td>
+          {{ value.city }}
+        </td>
+        <td>
+          {{ value.date }}
+        </td>
+        <td>
+          {{ value.time }}
+        </td>
+        <td>
+          {{ value.lab }}
+        </td>
+        <td>
+          {{ value.report }}
+        </td>
+        <td>
+          {{ value.result }}
+        </td>
+        <td>
+          {{ value.aadhar }}
+        </td>
+      </tr>
+    </table>
+  </div>
+
+</div>

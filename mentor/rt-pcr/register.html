@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <title>RT-PCR Registration</title>
+</head>
+
+<body ng-app="myapp" ng-controller="myctrl">
+    <h1>Registration</h1>
+
+    <form ng-submit="register()">
+        <div class="info">
+            <label for="name">Person Name : <input type="text" placeholder="Enter Name" name="name"
+                    ng-model="txtname"></label>
+            <label for="aadhar">Aadhar No :<input type="number" placeholder="Enter Aadhar Number" name="aadhar"
+                    ng-model="txtaadhar"></label>
+            <label for="dob">DOB :<input type="date" placeholder="Enter DOB" name="dob" ng-model="txtdob"></label>
+            <label for="city">City :<input type="text" placeholder="Enter City" name="city" ng-model="txtcity"></label>
+            <label for="dot">Date of Test :<input type="date" placeholder="Enter Date of Test" name="dot"
+                    ng-model="txtdot"></label>
+            <label for="tot">Time of Test :<input type="time" placeholder="Enter Time of Test" name="tot"
+                    ng-model="txttot"></label>
+            <label for="result">Result :<input type="text" placeholder="Enter Result" name="result"
+                    ng-model="txtresult"></label>
+            <label for="labname">Lab Name :<input type="text" placeholder="Enter Lab Name" name="labname"
+                    ng-model="txtlab"></label>
+            <label for="reportno">Report No :<input type="number" placeholder="Enter Report No" name="reportno"
+                    ng-model="txtreport"></label>
+            <label for="gender">Gender :<input type="text" placeholder="Enter Gender" name="gender"
+                    ng-model="txtgender"></label>
+            <button class="btn btn-success">Register</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Aadhar no</th>
+                    <th>DOB</th>
+                    <th>City</th>
+                    <th>Date of Test</th>
+                    <th>Time of Test</th>
+                    <th>Result</th>
+                    <th>Lab name</th>
+                    <th>Report No</th>
+                    <th>Gender</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="x in list">
+                    <td>{{x.txtname}}</td>
+                    <td>{{x.txtaadhar}}</td>
+                    <td>{{x.txtdob}}</td>
+                    <td>{{x.txtcity}}</td>
+                    <td>{{x.dot}}</td>
+                    <td>{{x.tot}}</td>
+                    <td>{{x.result}}</td>
+                    <td>{{x.labname}}</td>
+                    <td>{{x.rno}}</td>
+                    <td>{{x.gender}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+
+</body>
+
+
+</html>
+<script type="text/javascript">
+    var app = angular.module("myapp", []);
+    app.controller("myctrl", function ($scope) {
+        $scope.list = [{ name: 'arun', aadhar: '1234', dob: '1-2-3', city: 'sss', dot: '2-2-3', tot: '12:34', result: 'cfr', labname: 'dvgf', rno: '36', gender: 'crdd' }]
+        $scope.register = function () {
+            $scope.list.push({
+                name: $scope.txtname,
+                aadhar: $scope.txtaadhar,
+                dob: $scope.txtdob,
+                city: $scope.txtcity,
+                dot: $scope.txtdot,
+                tot: $scope.txttot,
+                result: $scope.txtresult,
+                labname: $scope.txtlab,
+                rno: $scope.txtreport,
+                gender: $scope.txtgender,
+            });
+        };
+    });
+
+</script>
